@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.container {
+  @apply mx-auto w-full max-w-[1400px] px-4;
+
+}
+
+@media (max-width: 880px) {
+  .mobile-menu {
+    display: flex;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .basket-hide {
+    display: none;
+  }
+}
+
+
+
+@media (min-width: 881px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.coffee-wrapper {
+  position: relative;
+
+}
+
+.back-lines {
+  position: absolute;
+  width: 520px;
+  margin-top: 160px;
+  right: 70px;
+  z-index: 10;
+}
+
+.coffee-img {
+  position: absolute;
+  width: 800px;
+  transform: rotate(-5deg);
+  right: 40px;
+  margin-top: 40px;
+  z-index: 0;
+}
+
+.cafe-badge {
+  position: absolute;
+  width: 150px;
+  top: -40px;
+  right: 120px;
+}
+
+
+@media (max-width: 1024px) {
+  .coffee-img {
+    width: 620px;
+    right: 10px;
+
+  }
+
+  .back-lines {
+    width: 460px;
+    right: 35px;
+  }
+
+  .cafe-badge {
+    width: 120px;
+    right: 100px;
+    top: -20px;
+  }
+
+  
+}
+
+@media (max-width: 640px) {
+  .coffee-img {
+    width: 420px;
+    left: 0px;
+    margin-top: 20px;
+  }
+
+  .back-lines {
+    width: 260px;
+    left: 100px;
+    margin-top: 100px;
+  }
+
+  .cafe-badge {
+    width: 70px;
+    right: 35px;
+    top: 30px;
+  }
+
+
+
+}
