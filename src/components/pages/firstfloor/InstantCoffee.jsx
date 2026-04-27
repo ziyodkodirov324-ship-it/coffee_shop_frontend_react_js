@@ -1,11 +1,25 @@
 import coffee from '../../../assets/img/Cofe.svg'
 import cofe from '../../../assets/img/chapTarafSariqButilka.svg'
 import back from '../../../assets/img/back.svg'
-import girl1 from "../../../assets/img/Mask group.svg";
-import girl2 from "../../../assets/img/Mask group (2).svg";
+import girl1 from "../../../assets/img/MaskGroup.svg";
+import girl2 from "../../../assets/img/MaskGroupTwo.svg";
 import otash from '../../../assets/img/otash.jpg'
 import bottleCofe from "../../../assets/img/o'ngTarafButilka.svg";
 import backLine from '../../../assets/icon/orqaChiziq.svg'
+
+// --
+
+
+import logo from "../../../assets/icon/logo.svg";
+import call from '../../../assets/icon/call.svg'
+import email from '../../../assets/icon/email.svg'
+import face from '../../../assets/icon/face.svg'
+import insta from '../../../assets/icon/insta.svg'
+import bird from '../../../assets/icon/bird.svg'
+import link from '../../../assets/icon/link.svg'
+import right from '../../../assets/icon/rightOne.svg'
+
+
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -13,17 +27,6 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-// --
-
-
-import logo from "../../../assets/icon/logo.svg";
-import call from '../../../assets/icon/call 1.svg'
-import email from '../../../assets/icon/email 1.svg'
-import face from '../../../assets/icon/face.svg'
-import insta from '../../../assets/icon/insta.svg'
-import bird from '../../../assets/icon/bird.svg'
-import link from '../../../assets/icon/link.svg'
-import right from '../../../assets/icon/right1.svg'
 
 
 
