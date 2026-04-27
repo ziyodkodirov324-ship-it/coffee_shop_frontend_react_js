@@ -12,7 +12,7 @@ function Navbar() {
     return (
         <div className="w-full bg-[#eeeff1] min-h-screen ">
 
-            <div className=" flex items-center justify-between  mx-14 md:px-10 py-5">
+            <div className="flex items-center justify-between px-5 md:px-10 lg:px-14 py-5">
 
                 <img className="w-24 md:w-32" src={logo} alt="logo" />
 
@@ -61,78 +61,55 @@ function Navbar() {
                 </div>
             </div>
 
+            <div className="flex flex-col lg:flex-row items-center justify-between px-5 md:px-12 lg:px-20 py-10 md:py-16 gap-10">
 
+                <div className="max-w-xl space-y-6 text-center lg:text-left lg:ml-10">
 
-                <div className="flex items-center justify-center lg:flex-row items-center justify-between px-5 md:px-12 lg:px-20 py-10 md:py-16 gap-10">
+                    <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-[1.05]">
+                        Alowishus <br /> Delicious <br />
+                        <span className="flex justify-center lg:justify-start gap-2 items-center">
+                            Coffee <img src={cafe} alt="" className="w-20 mt-5" />
+                        </span>
+                    </h1>
 
-                    <div className="max-w-xl space-y-6 text-center ml-10 lg:text-left">
+                    <p className="text-gray-500 text-sm md:text-base">
+                        A drink from the ‘My Alowishus’ bottled brews <br />
+                        range OR grab one of our delicious coffee’s.
+                    </p>
 
-                        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-[1.05]">
-                            Alowishus <br /> Delicious <br />
-                            <span className="flex justify-center lg:justify-start gap-2 items-center">
-                                Coffee <img src={cafe} alt="" className="items-center w-20 mt-5" />
-                            </span>
-                        </h1>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button className="bg-black text-white px-8 py-3 rounded-full">
+                            DOWNLOAD APP
+                        </button>
 
-                        <p className="text-gray-500 text-sm md:text-base">
-                            A drink from the ‘My Alowishus’ bottled brews <br />
-                            range OR grab one of our delicious coffee’s.
-                        </p>
-
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <button className="bg-black text-white px-8 py-3 rounded-full">
-                                DOWNLOAD APP
-                            </button>
-
-                            <button className="underline">
-                                SHOP COFFEE
-                            </button>
-                        </div>
-
+                        <button className="underline">
+                            SHOP COFFEE
+                        </button>
                     </div>
-
-
-
-                    <div className="coffee-wrapper w-full max-w-[700px] h-[420px] sm:h-[500px] md:h-[560px] lg:h-[620px] mx-auto flex items-center justify-center">
-
-                        <img
-                            src={backLines}
-                            alt=""
-                            className="back-lines"
-                        />
-
-                        <img
-                            src={coffee}
-                            alt="coffee"
-                            className="coffee-img"
-                        />
-
-                        <img
-                            src={cafe}
-                            alt="award"
-                            className="cafe-badge"
-                        />
-
-                        <div
-                            className="absolute bottom-25 ml-10 
-                            sm:left-[10px] px-5 py-4 w-[220px]
-                            md:left-16 bg-white rounded-2xl shadow-xl px-4 py-3 w-[200px] w-[240px] z-30" >
-                            <p className="text-yellow-500 text-base sm:text-lg">★★★★★</p>
-                            <p className="text-[11px] sm:text-xs text-gray-500 mt-1 leading-4">
-                                4.9 out of 5 Overall Star Rating For All Local Business.
-                            </p>
-                        </div>
-
-                    </div>
-
-
 
                 </div>
-            
-            
 
 
-        </div >
+                <div className="coffee-wrapper w-full max-w-[700px] h-[430px] mt-10 sm:h-[500px] md:h-[560px] lg:h-[600px] mx-auto flex items-center justify-center relative">
+
+                    <img src={backLines} alt="" className="back-lines" />
+
+                    <img src={coffee} alt="coffee" className="coffee-img" />
+
+                    <img src={cafe} alt="award" className="cafe-badge" />
+
+                    <div className="absolute bottom-10 left-5 sm:left-10 md:left-16 bg-white rounded-2xl shadow-xl p-4 w-[220px] z-30">
+                        <p className="text-yellow-500 text-base sm:text-lg">★★★★★</p>
+                        <p className="text-[11px] sm:text-xs text-gray-500 mt-1 leading-4">
+                            4.9 out of 5 Overall Star Rating For All Local Business.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
     );
 }
 

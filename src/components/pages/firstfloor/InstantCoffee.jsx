@@ -1,21 +1,21 @@
-import coffee from     '../../../assets/img/Cofe.svg'
-import cofe from       '../../../assets/img/chapTarafSariqButilka.svg'
+import coffee from '../../../assets/img/Cofe.svg'
+import cofe from '../../../assets/img/chapTarafSariqButilka.svg'
 import bottleCofe from "../../../assets/img/o'ngTarafButilka.svg";
-import girl2 from      "../../../assets/img/MaskGroupTwo.svg";
-import backLine from   '../../../assets/icon/orqaChiziq.svg'
-import girl1 from      "../../../assets/img/MaskGroup.svg";
-import otash from      '../../../assets/img/otash.jpg'
-import back from       '../../../assets/img/back.svg'
+import girl2 from "../../../assets/img/MaskGroupTwo.svg";
+import backLine from '../../../assets/icon/orqaChiziq.svg'
+import girl1 from "../../../assets/img/MaskGroup.svg";
+import otash from '../../../assets/img/otash.jpg'
+import back from '../../../assets/img/back.svg'
 
 // --
 
-import logo from  "../../../assets/icon/logo.svg";
-import call from  '../../../assets/icon/call.svg'
+import logo from "../../../assets/icon/logo.svg";
+import call from '../../../assets/icon/call.svg'
 import email from '../../../assets/icon/email.svg'
-import face from  '../../../assets/icon/face.svg'
+import face from '../../../assets/icon/face.svg'
 import insta from '../../../assets/icon/insta.svg'
-import bird from  '../../../assets/icon/bird.svg'
-import link from  '../../../assets/icon/link.svg'
+import bird from '../../../assets/icon/bird.svg'
+import link from '../../../assets/icon/link.svg'
 import right from '../../../assets/icon/rightOne.svg'
 
 
@@ -185,7 +185,7 @@ function FourthFloor() {
         <div className="w-full justify-items-center lg:w-1/2 mt-40 ">
 
           <h2 className="text-3xl sm:text-4xl lg:text-[52px] font-bold text-gray-900 leading-tight lg: -mt-40">
-            What Our <br /> Customers Say
+           <span className='pl-7'>What Our</span><br /> Customers Say
           </h2>
 
           <div className="flex items-center gap-3 mt-6">
@@ -223,103 +223,115 @@ function FourthFloor() {
 
       {/* ------------------------ */}
 
-      <div className="w-full bg-white pt-20 pb-10 mt-60">
-        <div className="max-w-7xl mx-auto px-4">
+      <div className="w-full bg-[#f9f9f9] pt-24 pb-10 mt-60">
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
 
             <div>
-              <img src={logo} alt="logo" className="w-[220px] mb-6" />
+              <img src={logo} alt="logo" className="w-[200px] mb-6" />
 
-              <p className="text-gray-500  w-[380px]">
-                We made it our mission to create <br /> community everyday and grow meaningful, <br /> lasting relationships with our staff, our <br /> suppliers and of course you, our customers.
+              <p className="text-gray-500 w-[360px] leading-7">
+                We made it our mission to create <br />
+                community everyday and grow meaningful, <br />
+                lasting relationships with our staff, our <br />
+                suppliers and of course you, our customers.
               </p>
 
-              <h3 className="text-xl font-semibold mt-10">
-                <b className="text-black">
-                  Store Locations
-                </b>
+              <h3 className="text-xl font-bold mt-12 text-black">
+                Store Locations
               </h3>
 
-              <p className="text-gray-500 mt-3 max-w-md">
+              <p className="text-gray-500 mt-3 max-w-sm leading-7">
                 Find your nearest Alowishus store with opening hours, location and contact details.
               </p>
 
-              <button className="mt-4 flex items-center gap-2 font-semibold text-sm">
-                FIND MY ALOWISHUS <img src={right} alt="" className="w-[20px]" />
+              <button className="mt-5 flex items-center gap-2 font-semibold text-sm tracking-wide">
+                FIND MY ALOWISHUS
+                <img src={right} alt="" className="w-[18px]" />
               </button>
             </div>
 
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-12">
 
+              <div>
+                <h3 className="text-4xl font-bold mb-6 text-black">
+                  Contact Alowishus!
+                </h3>
 
-              <div className="ml-30">
-                <div className=''>
-                  <h3 className="text-2xl font-bold mb-4">
-                    <b className="text-black">
-                      Contact Alowishus!
-                    </b>
-                  </h3>
-
-                  <div className="flex items-center gap-3 text-gray-600 mb-3">
-                    <span className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow"><img src={email} alt="" /></span>
-                    <span className='text-xl'>alowishus@gmail.com</span>
-                  </div>
-
-                  <div className="flex items-center gap-3 text-gray-600 mb-5">
-                    <span className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow"><img src={call} alt="" /></span>
-                    <span className='text-xl'>+110 214 214 2451</span>
-                  </div>
-
-                  <div className="flex gap-3">
-                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow">
-                      <img src={face} alt="" />
-                    </div>
-                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow">
-                      <img src={insta} alt="" />
-                    </div>
-                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow">
-                      <img src={bird} alt="" />
-                    </div>
-                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow">
-                      <img src={link} alt="" />
-                    </div>
-                  </div>
+                <div className="flex items-center gap-4 text-gray-600 mb-4">
+                  <span className="w-11 h-11 bg-white rounded-full flex items-center justify-center shadow-md">
+                    <img src={email} alt="" />
+                  </span>
+                  <span className="text-2xl">alowishus@gmail.com</span>
                 </div>
 
-
-                <div>
-                  <h3 className="text-3xl w-[300px] font-bold mb-4 ">
-                    First One’s On Us!
-                  </h3>
-
-                  <input
-                    type="email"
-                    placeholder="E-mail"
-                    className="w-80 bg-white rounded-full px-6 py-3 shadow-sm"
-                  />
-
-                  <br />
-
-                  <button className="cursor-pointer mt-4 bg-black text-white px-8 py-3 rounded-full">
-                    <h3 className="text-xl">
-                      SUBSCRIBE
-                    </h3>
-                  </button>
+                <div className="flex items-center gap-4 text-gray-600 mb-6">
+                  <span className="w-11 h-11 bg-white rounded-full flex items-center justify-center shadow-md">
+                    <img src={call} alt="" />
+                  </span>
+                  <span className="text-2xl">+110 214 214 2451</span>
                 </div>
+
+                <div className="flex gap-4">
+                  <div className="flex gap-5 ">
+                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg">
+                      <a href="https://www.facebook.com">
+                        <img src={face} alt="" />
+                      </a>
+                    </div>
+                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg">
+                      <a href="https://www.instagram.com">
+                        <img src={insta} alt="" />
+                      </a>
+                    </div>
+                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-xl">
+                      <a href="http://twich.ru/">
+                        <img src={bird} alt="" />
+                      </a>
+                    </div>
+                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-xl">
+                      <a href="https://www.linkedin.com/">
+                        <img src={link} alt="" />
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-3xl w-[280px] font-bold mb-5 leading-tight">
+                  First One’s On Us!
+                </h3>
+
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  className="w-[320px] bg-white rounded-full px-6 py-3 shadow-sm outline-none"
+                />
+
+                <br />
+
+                <button className="mt-5 bg-black text-white px-10 py-3 rounded-full font-semibold tracking-wide hover:opacity-90 transition">
+                  SUBSCRIBE
+                </button>
               </div>
 
             </div>
           </div>
+        </div>
 
-          <div className="border-t mt-16 pt-6 flex flex-col lg:flex-row justify-between text-sm text-gray-500">
-            <p>Copyright © 2022 <b className="text-black">Alowishus Delicious</b></p>
+        <div className="border-t mt-20 pt-6 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row justify-between text-sm text-gray-500">
+          <p>
+            Copyright © 2022 <b className="text-black">Alowishus Delicious</b>
+          </p>
 
-            <div className="flex gap-4 mt-2 lg:mt-0">
-              <span>Terms of Use</span>
-              <span>|</span>
-              <span>Privacy Policy</span>
-            </div>
+          <div className="flex gap-3 mt-3 lg:mt-0">
+            <span className="cursor-pointer hover:text-black">Terms of Use</span>
+            <span>|</span>
+            <span className="cursor-pointer hover:text-black">Privacy Policy</span>
           </div>
         </div>
       </div>
